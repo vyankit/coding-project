@@ -14,6 +14,6 @@ function compute()
     if (principal <= 0)
     {alert("please enter a positive number")}
     else{
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an interest of "+interest+"\<br\>and Your total amount will be "+amount+",\<br\>in the year "+year+"\<br\>"}
+    document.getElementById("result").innerHTML="If you deposit <span class="highlight">"+principal+"</span>,\<br\>at an interest rate of <span class="highlight">"+rate+"%</span>\<br\>You will receive an interest of <span class="highlight">"+interest+"</span>\<br\>and Your total amount will be <span class="highlight">"+amount+"</span>,\<br\>in the year <span class="highlight">"+year+"</span>\<br\>"}
 }
         
