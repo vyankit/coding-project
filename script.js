@@ -11,6 +11,9 @@ function compute()
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
     var amount = parseFloat(principal)+parseFloat(interest);
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+    if (principal <= 0)
+    {alert("please enter a positive number")}
+    else{
+    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an interest of "+interest+"\<br\>and Your total amount will be "+amount+",\<br\>in the year "+year+"\<br\>"}
 }
         
